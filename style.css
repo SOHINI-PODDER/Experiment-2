@@ -69,4 +69,8 @@ nav {
     color:#061b58
 }
 
-.menu
+.menu.active{
+    backgroung:
+    linear-gradient(90deg,#2878ff,#5b4df5)
+    
+}
