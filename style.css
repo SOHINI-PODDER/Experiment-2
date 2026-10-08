@@ -268,5 +268,135 @@ input::placeholder {
     background:
     linear-gradient(135deg,#f2f0ff,#f8f7ff);display:flex;
     flex-direction:column;
-    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+
+}
+
+.illustration {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #6847ec, #8c72f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    margin-bottom: 25px;
+    box-shadow: 0 12px 25px rgba(95, 70, 220, 0.25);
+    transform: rotate(-2deg);
+}
+
+
+
+
+.welcome-section h2 {
+    font-size: 18px;
+    color: #283047;
+    margin-bottom: 12px;
+}
+
+.welcome-section p {
+    max-width: 260px;
+    font-size: 10px;
+    line-height: 1.7;
+    color: #777;
+}
+
+
+
+
+.dots {
+    display: flex;
+    gap: 7px;
+    margin-top: 28px;
+}
+
+.dots span {
+    width: 6px;
+    height: 6px;
+    background: #d1cef0;
+    border-radius: 50%;
+}
+
+.dots .active-dot {
+    width: 18px;
+    border-radius: 5px;
+    background: #bee8493a;
+}
+
+
+
+
+@media (max-width: 850px) {
+
+    .container {
+        width: 94%;
+    }
+
+    nav {
+        padding: 0 18px;
+    }
+
+    .menu {
+        gap: 14px;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+
+    .login-section {
+        padding: 40px 35px;
+    }
+
+    .welcome-section {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 20px 0;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    nav {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .login-section,
+    .welcome-section {
+        width: 100%;
+    }
+
+    .login-section {
+        padding: 35px 25px;
+    }
+
+    .welcome-section {
+        min-height: 300px;
+        padding: 35px 20px;
+    }
 }
